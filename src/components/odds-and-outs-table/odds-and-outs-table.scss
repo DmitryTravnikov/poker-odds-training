@@ -64,6 +64,7 @@
     }
   }
   &__show-answers-button {
+    min-width: 180px;
     &.active {
       background: darken($green, 10%);
     }
