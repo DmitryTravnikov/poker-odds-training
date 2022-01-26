@@ -1,12 +1,14 @@
 extends ../templates/page/page
 include ../components/welcome/welcome
+include ../components/odds-and-outs-table/odds-and-outs-table
 
 block head
-	- const pageTitle = "Главная";
-	- const pageDescription = "Шаблон проекта для быстрого старта с webpack, pug и scss";
-	- const pageKeywords = "webpack, pug, scss";
+  - const pageTitle = "Poker Training";
+  - const pageDescription = "Шаблон проекта для быстрого старта с webpack, pug и scss";
+  - const pageKeywords = "webpack, pug, scss";
 
 block content
-	+welcome({
-		message: 'Welcome! <br/> Happy coding!'
-	})
+  //- +welcome({
+  //- 	message: 'Welcome! <br/> Happy coding!'
+  //- })
+  +odds-and-outs-table

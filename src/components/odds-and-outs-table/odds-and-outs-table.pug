@@ -1,0 +1,885 @@
+mixin odds-and-outs-table(props = {})
+  - const {  } = props;
+
+  .odds-and-outs__table-container
+    table.odds-and-outs__table
+      tr
+        td &nbsp;
+        td
+          table
+            tr
+              td(style="border: 1px solid grey; padding: 1px 10px;") Probability
+            tr
+              td(style="border: 1px solid grey; padding: 1px 10px;") Coming cards
+        td
+          table
+            tr
+              td(style="border: 1px solid grey; padding: 1px 10px;") Odds
+            tr
+              td(style="border: 1px solid grey; padding: 1px 10px;") Coming cards
+        td &nbsp;
+      tr
+        td
+          table
+            tr
+              td(style="padding: 2px 10px;") &nbsp;
+            tr
+              td(style="border: 1px solid grey; padding: 1px 10px;") Outs
+            tr
+              td(style="border: 1px solid grey; padding: 1px 10px;") 1
+            tr
+              td(style="border: 1px solid grey; padding: 1px 10px;") 2
+            tr
+              td(style="border: 1px solid grey; padding: 1px 10px;") 3
+            tr
+              td(style="border: 1px solid grey; padding: 1px 10px;") 4
+            tr
+              td(style="border: 1px solid grey; padding: 1px 10px;") 5
+            tr
+              td(style="border: 1px solid grey; padding: 1px 10px;") 6
+            tr
+              td(style="border: 1px solid grey; padding: 1px 10px;") 7
+            tr
+              td(style="border: 1px solid grey; padding: 1px 10px;") 8
+            tr
+              td(style="border: 1px solid grey; padding: 1px 10px;") 9
+            tr
+              td(style="border: 1px solid grey; padding: 1px 10px;") 10
+            tr
+              td(style="border: 1px solid grey; padding: 1px 10px;") 11
+            tr
+              td(style="border: 1px solid grey; padding: 1px 10px;") 12
+            tr
+              td(style="border: 1px solid grey; padding: 1px 10px;") 13
+            tr
+              td(style="border: 1px solid grey; padding: 1px 10px;") 14
+            tr
+              td(style="border: 1px solid grey; padding: 1px 10px;") 15
+            tr
+              td(style="border: 1px solid grey; padding: 1px 10px;") 16
+            tr
+              td(style="border: 1px solid grey; padding: 1px 10px;") 17
+            tr
+              td(style="border: 1px solid grey; padding: 1px 10px;") 18
+            tr
+              td(style="border: 1px solid grey; padding: 1px 10px;") 19
+            tr
+              td(style="border: 1px solid grey; padding: 1px 10px;") 20
+            tr
+              td(style="border: 1px solid grey; padding: 1px 10px;") 21
+        td
+          table
+            tr
+              td(style="border: 1px solid grey; padding: 1px 10px;") 1 card
+              td(style="border: 1px solid grey; padding: 1px 10px;") 1 card
+              td(style="border: 1px solid grey; padding: 1px 10px;") 2 cards
+            tr
+              td(style="border: 1px solid grey; padding: 1px 10px;") Turn
+              td(style="border: 1px solid grey; padding: 1px 10px;") River
+              td(style="border: 1px solid grey; padding: 1px 10px;") Turn and river
+            tr
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.get-input.one-out-input(type="text" placeholder="-" tabindex="1")
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.get-input.one-out-input(type="text" placeholder="-" tabindex="1")
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.get-input.one-out-input(type="text" placeholder="-" tabindex="1")
+            tr
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.get-input.two-outs-input(type="text" placeholder="-" tabindex="2")
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.get-input.two-outs-input(type="text" placeholder="-" tabindex="2")
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.get-input.two-outs-input(type="text" placeholder="-" tabindex="2")
+            tr
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.get-input.three-outs-input(type="text" placeholder="-" tabindex="3")
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.get-input.three-outs-input(type="text" placeholder="-" tabindex="3")
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.get-input.three-outs-input(type="text" placeholder="-" tabindex="3")
+            tr
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.get-input.four-outs-input(type="text" placeholder="-" tabindex="4")
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.get-input.four-outs-input(type="text" placeholder="-" tabindex="4")
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.get-input.four-outs-input(type="text" placeholder="-" tabindex="4")
+            tr
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.get-input.five-outs-input(type="text" placeholder="-" tabindex="5")
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.get-input.five-outs-input(type="text" placeholder="-" tabindex="5")
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.get-input.five-outs-input(type="text" placeholder="-" tabindex="5")
+            tr
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.get-input.six-outs-input(type="text" placeholder="-" tabindex="6")
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.get-input.six-outs-input(type="text" placeholder="-" tabindex="6")
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.get-input.six-outs-input(type="text" placeholder="-" tabindex="6")
+            tr
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.get-input.seven-outs-input(type="text" placeholder="-" tabindex="7")
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.get-input.seven-outs-input(type="text" placeholder="-" tabindex="7")
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.get-input.seven-outs-input(type="text" placeholder="-" tabindex="7")
+            tr
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.get-input.eight-outs-input(type="text" placeholder="-" tabindex="8")
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.get-input.eight-outs-input(type="text" placeholder="-" tabindex="8")
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.get-input.eight-outs-input(type="text" placeholder="-" tabindex="8")
+            tr
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.get-input.nine-outs-input(type="text" placeholder="-" tabindex="9")
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.get-input.nine-outs-input(type="text" placeholder="-" tabindex="9")
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.get-input.nine-outs-input(type="text" placeholder="-" tabindex="9")
+            tr
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.get-input.ten-outs-input(type="text" placeholder="-" tabindex="10")
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.get-input.ten-outs-input(type="text" placeholder="-" tabindex="10")
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.get-input.ten-outs-input(type="text" placeholder="-" tabindex="10")
+            tr
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.get-input.eleven-outs-input(type="text" placeholder="-" tabindex="11")
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.get-input.eleven-outs-input(type="text" placeholder="-" tabindex="11")
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.get-input.eleven-outs-input(type="text" placeholder="-" tabindex="11")
+            tr
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.get-input.twelve-outs-input(type="text" placeholder="-" tabindex="12")
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.get-input.twelve-outs-input(type="text" placeholder="-" tabindex="12")
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.get-input.twelve-outs-input(type="text" placeholder="-" tabindex="12")
+            tr
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.get-input.thirteen-outs-input(type="text" placeholder="-" tabindex="13")
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.get-input.thirteen-outs-input(type="text" placeholder="-" tabindex="13")
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.get-input.thirteen-outs-input(type="text" placeholder="-" tabindex="13")
+            tr
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.get-input.fourteen-outs-input(type="text" placeholder="-" tabindex="14")
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.get-input.fourteen-outs-input(type="text" placeholder="-" tabindex="14")
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.get-input.fourteen-outs-input(type="text" placeholder="-" tabindex="14")
+            tr
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.get-input.fifteen-outs-input(type="text" placeholder="-" tabindex="15")
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.get-input.fifteen-outs-input(type="text" placeholder="-" tabindex="15")
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.get-input.fifteen-outs-input(type="text" placeholder="-" tabindex="15")
+            tr
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.get-input.sixteen-outs-input(type="text" placeholder="-" tabindex="16")
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.get-input.sixteen-outs-input(type="text" placeholder="-" tabindex="16")
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.get-input.sixteen-outs-input(type="text" placeholder="-" tabindex="16")
+            tr
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.get-input.seventeen-outs-input(type="text" placeholder="-" tabindex="17")
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.get-input.seventeen-outs-input(type="text" placeholder="-" tabindex="17")
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.get-input.seventeen-outs-input(type="text" placeholder="-" tabindex="17")
+            tr
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.get-input.eighteen-outs-input(type="text" placeholder="-" tabindex="18")
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.get-input.eighteen-outs-input(type="text" placeholder="-" tabindex="18")
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.get-input.eighteen-outs-input(type="text" placeholder="-" tabindex="18")
+            tr
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.get-input.nineteen-outs-input(type="text" placeholder="-" tabindex="19")
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.get-input.nineteen-outs-input(type="text" placeholder="-" tabindex="19")
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.get-input.nineteen-outs-input(type="text" placeholder="-" tabindex="19")
+            tr
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.get-input.twenty-outs-input(type="text" placeholder="-" tabindex="20")
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.get-input.twenty-outs-input(type="text" placeholder="-" tabindex="20")
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.get-input.twenty-outs-input(type="text" placeholder="-" tabindex="20")
+            tr
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.get-input.twenty-one-outs-input(type="text" placeholder="-" tabindex="21")
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.get-input.twenty-one-outs-input(type="text" placeholder="-" tabindex="21")
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.get-input.twenty-one-outs-input(type="text" placeholder="-" tabindex="21")
+        td
+          table
+            tr
+              td(style="border: 1px solid grey; padding: 1px 10px;") 1 card
+              td(style="border: 1px solid grey; padding: 1px 10px;") 1 card
+              td(style="border: 1px solid grey; padding: 1px 10px;") 2 cards
+            tr
+              td(style="border: 1px solid grey; padding: 1px 10px;") Turn
+              td(style="border: 1px solid grey; padding: 1px 10px;") River
+              td(style="border: 1px solid grey; padding: 1px 10px;") Turn and river
+            tr
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.get-input.one-out-input(type="text" placeholder="-" tabindex="1")
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.get-input.one-out-input(type="text" placeholder="-" tabindex="1")
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.get-input.one-out-input(type="text" placeholder="-" tabindex="1")
+            tr
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.get-input.two-outs-input(type="text" placeholder="-" tabindex="2")
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.get-input.two-outs-input(type="text" placeholder="-" tabindex="2")
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.get-input.two-outs-input(type="text" placeholder="-" tabindex="2")
+            tr
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.get-input.three-outs-input(type="text" placeholder="-" tabindex="3")
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.get-input.three-outs-input(type="text" placeholder="-" tabindex="3")
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.get-input.three-outs-input(type="text" placeholder="-" tabindex="3")
+            tr
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.get-input.four-outs-input(type="text" placeholder="-" tabindex="4")
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.get-input.four-outs-input(type="text" placeholder="-" tabindex="4")
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.get-input.four-outs-input(type="text" placeholder="-" tabindex="4")
+            tr
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.get-input.five-outs-input(type="text" placeholder="-" tabindex="5")
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.get-input.five-outs-input(type="text" placeholder="-" tabindex="5")
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.get-input.five-outs-input(type="text" placeholder="-" tabindex="5")
+            tr
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.get-input.six-outs-input(type="text" placeholder="-" tabindex="6")
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.get-input.six-outs-input(type="text" placeholder="-" tabindex="6")
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.get-input.six-outs-input(type="text" placeholder="-" tabindex="6")
+            tr
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.get-input.seven-outs-input(type="text" placeholder="-" tabindex="7")
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.get-input.seven-outs-input(type="text" placeholder="-" tabindex="7")
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.get-input.seven-outs-input(type="text" placeholder="-" tabindex="7")
+            tr
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.get-input.eight-outs-input(type="text" placeholder="-" tabindex="8")
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.get-input.eight-outs-input(type="text" placeholder="-" tabindex="8")
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.get-input.eight-outs-input(type="text" placeholder="-" tabindex="8")
+            tr
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.get-input.nine-outs-input(type="text" placeholder="-" tabindex="9")
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.get-input.nine-outs-input(type="text" placeholder="-" tabindex="9")
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.get-input.nine-outs-input(type="text" placeholder="-" tabindex="9")
+            tr
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.get-input.ten-outs-input(type="text" placeholder="-" tabindex="10")
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.get-input.ten-outs-input(type="text" placeholder="-" tabindex="10")
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.get-input.ten-outs-input(type="text" placeholder="-" tabindex="10")
+            tr
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.get-input.eleven-outs-input(type="text" placeholder="-" tabindex="11")
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.get-input.eleven-outs-input(type="text" placeholder="-" tabindex="11")
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.get-input.eleven-outs-input(type="text" placeholder="-" tabindex="11")
+            tr
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.get-input.twelve-outs-input(type="text" placeholder="-" tabindex="12")
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.get-input.twelve-outs-input(type="text" placeholder="-" tabindex="12")
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.get-input.twelve-outs-input(type="text" placeholder="-" tabindex="12")
+            tr
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.get-input.thirteen-outs-input(type="text" placeholder="-" tabindex="13")
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.get-input.thirteen-outs-input(type="text" placeholder="-" tabindex="13")
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.get-input.thirteen-outs-input(type="text" placeholder="-" tabindex="13")
+            tr
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.get-input.fourteen-outs-input(type="text" placeholder="-" tabindex="14")
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.get-input.fourteen-outs-input(type="text" placeholder="-" tabindex="14")
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.get-input.fourteen-outs-input(type="text" placeholder="-" tabindex="14")
+            tr
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.get-input.fifteen-outs-input(type="text" placeholder="-" tabindex="15")
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.get-input.fifteen-outs-input(type="text" placeholder="-" tabindex="15")
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.get-input.fifteen-outs-input(type="text" placeholder="-" tabindex="15")
+            tr
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.get-input.sixteen-outs-input(type="text" placeholder="-" tabindex="16")
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.get-input.sixteen-outs-input(type="text" placeholder="-" tabindex="16")
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.get-input.sixteen-outs-input(type="text" placeholder="-" tabindex="16")
+            tr
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.get-input.seventeen-outs-input(type="text" placeholder="-" tabindex="17")
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.get-input.seventeen-outs-input(type="text" placeholder="-" tabindex="17")
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.get-input.seventeen-outs-input(type="text" placeholder="-" tabindex="17")
+            tr
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.get-input.eighteen-outs-input(type="text" placeholder="-" tabindex="18")
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.get-input.eighteen-outs-input(type="text" placeholder="-" tabindex="18")
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.get-input.eighteen-outs-input(type="text" placeholder="-" tabindex="18")
+            tr
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.get-input.nineteen-outs-input(type="text" placeholder="-" tabindex="19")
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.get-input.nineteen-outs-input(type="text" placeholder="-" tabindex="19")
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.get-input.nineteen-outs-input(type="text" placeholder="-" tabindex="19")
+            tr
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.get-input.twenty-outs-input(type="text" placeholder="-" tabindex="20")
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.get-input.twenty-outs-input(type="text" placeholder="-" tabindex="20")
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.get-input.twenty-outs-input(type="text" placeholder="-" tabindex="20")
+            tr
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.get-input.twenty-one-outs-input(type="text" placeholder="-" tabindex="21")
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.get-input.twenty-one-outs-input(type="text" placeholder="-" tabindex="21")
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.get-input.twenty-one-outs-input(type="text" placeholder="-" tabindex="21")
+        td
+          table
+            tr
+              td(style="padding: 2px 10px;") &nbsp;
+            tr
+              td(style="border: 1px solid grey; padding: 1px 10px;") Examples
+            tr
+              td(style="border: 1px solid grey; padding: 1px 10px;") Backdoor flush draw
+            tr
+              td(style="border: 1px solid grey; padding: 1px 10px;") Set from a pocket pair
+            tr
+              td(style="border: 1px solid grey; padding: 1px 10px;") -
+            tr
+              td(style="border: 1px solid grey; padding: 1px 10px;") Gutshot
+            tr
+              td(style="border: 1px solid grey; padding: 1px 10px;") Two pairs or trips
+            tr
+              td(style="border: 1px solid grey; padding: 1px 10px;") -
+            tr
+              td(style="border: 1px solid grey; padding: 1px 10px;") -
+            tr
+              td(style="border: 1px solid grey; padding: 1px 10px;") OESD
+            tr
+              td(style="border: 1px solid grey; padding: 1px 10px;") Flush draw
+            tr
+              td(style="border: 1px solid grey; padding: 1px 10px;") -
+            tr
+              td(style="border: 1px solid grey; padding: 1px 10px;") -
+            tr
+              td(style="border: 1px solid grey; padding: 1px 10px;") Flush draw and gutshot
+            tr
+              td(style="border: 1px solid grey; padding: 1px 10px;") OESD with pair
+            tr
+              td(style="border: 1px solid grey; padding: 1px 10px;") Flush draw with pair
+            tr
+              td(style="border: 1px solid grey; padding: 1px 10px;") Monster draw
+            tr
+              td(style="border: 1px solid grey; padding: 1px 10px;") -
+            tr
+              td(style="border: 1px solid grey; padding: 1px 10px;") -
+            tr
+              td(style="border: 1px solid grey; padding: 1px 10px;") -
+            tr
+              td(style="border: 1px solid grey; padding: 1px 10px;") -
+            tr
+              td(style="border: 1px solid grey; padding: 1px 10px;") -
+            tr
+              td(style="border: 1px solid grey; padding: 1px 10px;") -
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    table.odds-and-outs__table.odds-and-outs__answers-table
+      tr
+        td &nbsp;
+        td
+          table
+            tr
+              td(style="border: 1px solid grey; padding: 1px 10px;") Probability
+            tr
+              td(style="border: 1px solid grey; padding: 1px 10px;") Coming cards
+        td
+          table
+            tr
+              td(style="border: 1px solid grey; padding: 1px 10px;") Odds
+            tr
+              td(style="border: 1px solid grey; padding: 1px 10px;") Coming cards
+        td &nbsp;
+      tr
+        td
+          table
+            tr
+              td(style="padding: 2px 10px;") &nbsp;
+            tr
+              td(style="border: 1px solid grey; padding: 1px 10px;") Outs
+            tr
+              td(style="border: 1px solid grey; padding: 1px 10px;") 1
+            tr
+              td(style="border: 1px solid grey; padding: 1px 10px;") 2
+            tr
+              td(style="border: 1px solid grey; padding: 1px 10px;") 3
+            tr
+              td(style="border: 1px solid grey; padding: 1px 10px;") 4
+            tr
+              td(style="border: 1px solid grey; padding: 1px 10px;") 5
+            tr
+              td(style="border: 1px solid grey; padding: 1px 10px;") 6
+            tr
+              td(style="border: 1px solid grey; padding: 1px 10px;") 7
+            tr
+              td(style="border: 1px solid grey; padding: 1px 10px;") 8
+            tr
+              td(style="border: 1px solid grey; padding: 1px 10px;") 9
+            tr
+              td(style="border: 1px solid grey; padding: 1px 10px;") 10
+            tr
+              td(style="border: 1px solid grey; padding: 1px 10px;") 11
+            tr
+              td(style="border: 1px solid grey; padding: 1px 10px;") 12
+            tr
+              td(style="border: 1px solid grey; padding: 1px 10px;") 13
+            tr
+              td(style="border: 1px solid grey; padding: 1px 10px;") 14
+            tr
+              td(style="border: 1px solid grey; padding: 1px 10px;") 15
+            tr
+              td(style="border: 1px solid grey; padding: 1px 10px;") 16
+            tr
+              td(style="border: 1px solid grey; padding: 1px 10px;") 17
+            tr
+              td(style="border: 1px solid grey; padding: 1px 10px;") 18
+            tr
+              td(style="border: 1px solid grey; padding: 1px 10px;") 19
+            tr
+              td(style="border: 1px solid grey; padding: 1px 10px;") 20
+            tr
+              td(style="border: 1px solid grey; padding: 1px 10px;") 21
+        td
+          table
+            tr
+              td(style="border: 1px solid grey; padding: 1px 10px;") 1 card
+              td(style="border: 1px solid grey; padding: 1px 10px;") 1 card
+              td(style="border: 1px solid grey; padding: 1px 10px;") 2 cards
+            tr
+              td(style="border: 1px solid grey; padding: 1px 10px;") Turn
+              td(style="border: 1px solid grey; padding: 1px 10px;") River
+              td(style="border: 1px solid grey; padding: 1px 10px;") Turn and river
+            tr
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.odds-and-outs__answers-input(type="text" placeholder="-" tabindex="1" disabled)
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.odds-and-outs__answers-input(type="text" placeholder="-" tabindex="1" disabled)
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.odds-and-outs__answers-input(type="text" placeholder="-" tabindex="1" disabled)
+            tr
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.odds-and-outs__answers-input(type="text" placeholder="-" tabindex="2" disabled)
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.odds-and-outs__answers-input(type="text" placeholder="-" tabindex="2" disabled)
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.odds-and-outs__answers-input(type="text" placeholder="-" tabindex="2" disabled)
+            tr
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.odds-and-outs__answers-input(type="text" placeholder="-" tabindex="3" disabled)
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.odds-and-outs__answers-input(type="text" placeholder="-" tabindex="3" disabled)
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.odds-and-outs__answers-input(type="text" placeholder="-" tabindex="3" disabled)
+            tr
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.odds-and-outs__answers-input(type="text" placeholder="-" tabindex="4" disabled)
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.odds-and-outs__answers-input(type="text" placeholder="-" tabindex="4" disabled)
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.odds-and-outs__answers-input(type="text" placeholder="-" tabindex="4" disabled)
+            tr
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.odds-and-outs__answers-input(type="text" placeholder="-" tabindex="5" disabled)
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.odds-and-outs__answers-input(type="text" placeholder="-" tabindex="5" disabled)
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.odds-and-outs__answers-input(type="text" placeholder="-" tabindex="5" disabled)
+            tr
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.odds-and-outs__answers-input(type="text" placeholder="-" tabindex="6" disabled)
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.odds-and-outs__answers-input(type="text" placeholder="-" tabindex="6" disabled)
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.odds-and-outs__answers-input(type="text" placeholder="-" tabindex="6" disabled)
+            tr
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.odds-and-outs__answers-input(type="text" placeholder="-" tabindex="7" disabled)
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.odds-and-outs__answers-input(type="text" placeholder="-" tabindex="7" disabled)
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.odds-and-outs__answers-input(type="text" placeholder="-" tabindex="7" disabled)
+            tr
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.odds-and-outs__answers-input(type="text" placeholder="-" tabindex="8" disabled)
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.odds-and-outs__answers-input(type="text" placeholder="-" tabindex="8" disabled)
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.odds-and-outs__answers-input(type="text" placeholder="-" tabindex="8" disabled)
+            tr
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.odds-and-outs__answers-input(type="text" placeholder="-" tabindex="9" disabled)
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.odds-and-outs__answers-input(type="text" placeholder="-" tabindex="9" disabled)
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.odds-and-outs__answers-input(type="text" placeholder="-" tabindex="9" disabled)
+            tr
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.odds-and-outs__answers-input(type="text" placeholder="-" tabindex="10" disabled)
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.odds-and-outs__answers-input(type="text" placeholder="-" tabindex="10" disabled)
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.odds-and-outs__answers-input(type="text" placeholder="-" tabindex="10" disabled)
+            tr
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.odds-and-outs__answers-input(type="text" placeholder="-" tabindex="11" disabled)
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.odds-and-outs__answers-input(type="text" placeholder="-" tabindex="11" disabled)
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.odds-and-outs__answers-input(type="text" placeholder="-" tabindex="11" disabled)
+            tr
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.odds-and-outs__answers-input(type="text" placeholder="-" tabindex="12" disabled)
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.odds-and-outs__answers-input(type="text" placeholder="-" tabindex="12" disabled)
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.odds-and-outs__answers-input(type="text" placeholder="-" tabindex="12" disabled)
+            tr
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.odds-and-outs__answers-input(type="text" placeholder="-" tabindex="13" disabled)
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.odds-and-outs__answers-input(type="text" placeholder="-" tabindex="13" disabled)
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.odds-and-outs__answers-input(type="text" placeholder="-" tabindex="13" disabled)
+            tr
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.odds-and-outs__answers-input(type="text" placeholder="-" tabindex="14" disabled)
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.odds-and-outs__answers-input(type="text" placeholder="-" tabindex="14" disabled)
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.odds-and-outs__answers-input(type="text" placeholder="-" tabindex="14" disabled)
+            tr
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.odds-and-outs__answers-input(type="text" placeholder="-" tabindex="15" disabled)
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.odds-and-outs__answers-input(type="text" placeholder="-" tabindex="15" disabled)
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.odds-and-outs__answers-input(type="text" placeholder="-" tabindex="15" disabled)
+            tr
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.odds-and-outs__answers-input(type="text" placeholder="-" tabindex="16" disabled)
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.odds-and-outs__answers-input(type="text" placeholder="-" tabindex="16" disabled)
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.odds-and-outs__answers-input(type="text" placeholder="-" tabindex="16" disabled)
+            tr
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.odds-and-outs__answers-input(type="text" placeholder="-" tabindex="17" disabled)
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.odds-and-outs__answers-input(type="text" placeholder="-" tabindex="17" disabled)
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.odds-and-outs__answers-input(type="text" placeholder="-" tabindex="17" disabled)
+            tr
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.odds-and-outs__answers-input(type="text" placeholder="-" tabindex="18" disabled)
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.odds-and-outs__answers-input(type="text" placeholder="-" tabindex="18" disabled)
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.odds-and-outs__answers-input(type="text" placeholder="-" tabindex="18" disabled)
+            tr
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.odds-and-outs__answers-input(type="text" placeholder="-" tabindex="19" disabled)
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.odds-and-outs__answers-input(type="text" placeholder="-" tabindex="19" disabled)
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.odds-and-outs__answers-input(type="text" placeholder="-" tabindex="19" disabled)
+            tr
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.odds-and-outs__answers-input(type="text" placeholder="-" tabindex="20" disabled)
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.odds-and-outs__answers-input(type="text" placeholder="-" tabindex="20" disabled)
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.odds-and-outs__answers-input(type="text" placeholder="-" tabindex="20" disabled)
+            tr
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.odds-and-outs__answers-input(type="text" placeholder="-" tabindex="21" disabled)
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.odds-and-outs__answers-input(type="text" placeholder="-" tabindex="21" disabled)
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.odds-and-outs__answers-input(type="text" placeholder="-" tabindex="21" disabled)
+        td
+          table
+            tr
+              td(style="border: 1px solid grey; padding: 1px 10px;") 1 card
+              td(style="border: 1px solid grey; padding: 1px 10px;") 1 card
+              td(style="border: 1px solid grey; padding: 1px 10px;") 2 cards
+            tr
+              td(style="border: 1px solid grey; padding: 1px 10px;") Turn
+              td(style="border: 1px solid grey; padding: 1px 10px;") River
+              td(style="border: 1px solid grey; padding: 1px 10px;") Turn and river
+            tr
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.odds-and-outs__answers-input(type="text" placeholder="-" tabindex="1" disabled)
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.odds-and-outs__answers-input(type="text" placeholder="-" tabindex="1" disabled)
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.odds-and-outs__answers-input(type="text" placeholder="-" tabindex="1" disabled)
+            tr
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.odds-and-outs__answers-input(type="text" placeholder="-" tabindex="2" disabled)
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.odds-and-outs__answers-input(type="text" placeholder="-" tabindex="2" disabled)
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.odds-and-outs__answers-input(type="text" placeholder="-" tabindex="2" disabled)
+            tr
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.odds-and-outs__answers-input(type="text" placeholder="-" tabindex="3" disabled)
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.odds-and-outs__answers-input(type="text" placeholder="-" tabindex="3" disabled)
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.odds-and-outs__answers-input(type="text" placeholder="-" tabindex="3" disabled)
+            tr
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.odds-and-outs__answers-input(type="text" placeholder="-" tabindex="4" disabled)
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.odds-and-outs__answers-input(type="text" placeholder="-" tabindex="4" disabled)
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.odds-and-outs__answers-input(type="text" placeholder="-" tabindex="4" disabled)
+            tr
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.odds-and-outs__answers-input(type="text" placeholder="-" tabindex="5" disabled)
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.odds-and-outs__answers-input(type="text" placeholder="-" tabindex="5" disabled)
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.odds-and-outs__answers-input(type="text" placeholder="-" tabindex="5" disabled)
+            tr
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.odds-and-outs__answers-input(type="text" placeholder="-" tabindex="6" disabled)
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.odds-and-outs__answers-input(type="text" placeholder="-" tabindex="6" disabled)
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.odds-and-outs__answers-input(type="text" placeholder="-" tabindex="6" disabled)
+            tr
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.odds-and-outs__answers-input(type="text" placeholder="-" tabindex="7" disabled)
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.odds-and-outs__answers-input(type="text" placeholder="-" tabindex="7" disabled)
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.odds-and-outs__answers-input(type="text" placeholder="-" tabindex="7" disabled)
+            tr
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.odds-and-outs__answers-input(type="text" placeholder="-" tabindex="8" disabled)
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.odds-and-outs__answers-input(type="text" placeholder="-" tabindex="8" disabled)
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.odds-and-outs__answers-input(type="text" placeholder="-" tabindex="8" disabled)
+            tr
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.odds-and-outs__answers-input(type="text" placeholder="-" tabindex="9" disabled)
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.odds-and-outs__answers-input(type="text" placeholder="-" tabindex="9" disabled)
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.odds-and-outs__answers-input(type="text" placeholder="-" tabindex="9" disabled)
+            tr
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.odds-and-outs__answers-input(type="text" placeholder="-" tabindex="10" disabled)
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.odds-and-outs__answers-input(type="text" placeholder="-" tabindex="10" disabled)
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.odds-and-outs__answers-input(type="text" placeholder="-" tabindex="10" disabled)
+            tr
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.odds-and-outs__answers-input(type="text" placeholder="-" tabindex="11" disabled)
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.odds-and-outs__answers-input(type="text" placeholder="-" tabindex="11" disabled)
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.odds-and-outs__answers-input(type="text" placeholder="-" tabindex="11" disabled)
+            tr
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.odds-and-outs__answers-input(type="text" placeholder="-" tabindex="12" disabled)
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.odds-and-outs__answers-input(type="text" placeholder="-" tabindex="12" disabled)
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.odds-and-outs__answers-input(type="text" placeholder="-" tabindex="12" disabled)
+            tr
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.odds-and-outs__answers-input(type="text" placeholder="-" tabindex="13" disabled)
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.odds-and-outs__answers-input(type="text" placeholder="-" tabindex="13" disabled)
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.odds-and-outs__answers-input(type="text" placeholder="-" tabindex="13" disabled)
+            tr
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.odds-and-outs__answers-input(type="text" placeholder="-" tabindex="14" disabled)
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.odds-and-outs__answers-input(type="text" placeholder="-" tabindex="14" disabled)
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.odds-and-outs__answers-input(type="text" placeholder="-" tabindex="14" disabled)
+            tr
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.odds-and-outs__answers-input(type="text" placeholder="-" tabindex="15" disabled)
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.odds-and-outs__answers-input(type="text" placeholder="-" tabindex="15" disabled)
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.odds-and-outs__answers-input(type="text" placeholder="-" tabindex="15" disabled)
+            tr
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.odds-and-outs__answers-input(type="text" placeholder="-" tabindex="16" disabled)
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.odds-and-outs__answers-input(type="text" placeholder="-" tabindex="16" disabled)
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.odds-and-outs__answers-input(type="text" placeholder="-" tabindex="16" disabled)
+            tr
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.odds-and-outs__answers-input(type="text" placeholder="-" tabindex="17" disabled)
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.odds-and-outs__answers-input(type="text" placeholder="-" tabindex="17" disabled)
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.odds-and-outs__answers-input(type="text" placeholder="-" tabindex="17" disabled)
+            tr
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.odds-and-outs__answers-input(type="text" placeholder="-" tabindex="18" disabled)
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.odds-and-outs__answers-input(type="text" placeholder="-" tabindex="18" disabled)
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.odds-and-outs__answers-input(type="text" placeholder="-" tabindex="18" disabled)
+            tr
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.odds-and-outs__answers-input(type="text" placeholder="-" tabindex="19" disabled)
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.odds-and-outs__answers-input(type="text" placeholder="-" tabindex="19" disabled)
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.odds-and-outs__answers-input(type="text" placeholder="-" tabindex="19" disabled)
+            tr
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.odds-and-outs__answers-input(type="text" placeholder="-" tabindex="20" disabled)
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.odds-and-outs__answers-input(type="text" placeholder="-" tabindex="20" disabled)
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.odds-and-outs__answers-input(type="text" placeholder="-" tabindex="20" disabled)
+            tr
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.odds-and-outs__answers-input(type="text" placeholder="-" tabindex="21" disabled)
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.odds-and-outs__answers-input(type="text" placeholder="-" tabindex="21" disabled)
+              td(style="border: 1px solid grey; padding: 1px 10px;")
+                input.odds-and-outs__answers-input(type="text" placeholder="-" tabindex="21" disabled)
+        td
+          table
+            tr
+              td(style="padding: 2px 10px;") &nbsp;
+            tr
+              td(style="border: 1px solid grey; padding: 1px 10px;") Examples
+            tr
+              td(style="border: 1px solid grey; padding: 1px 10px;") Backdoor flush draw
+            tr
+              td(style="border: 1px solid grey; padding: 1px 10px;") Set from a pocket pair
+            tr
+              td(style="border: 1px solid grey; padding: 1px 10px;") -
+            tr
+              td(style="border: 1px solid grey; padding: 1px 10px;") Gutshot
+            tr
+              td(style="border: 1px solid grey; padding: 1px 10px;") Two pairs or trips
+            tr
+              td(style="border: 1px solid grey; padding: 1px 10px;") -
+            tr
+              td(style="border: 1px solid grey; padding: 1px 10px;") -
+            tr
+              td(style="border: 1px solid grey; padding: 1px 10px;") OESD
+            tr
+              td(style="border: 1px solid grey; padding: 1px 10px;") Flush draw
+            tr
+              td(style="border: 1px solid grey; padding: 1px 10px;") -
+            tr
+              td(style="border: 1px solid grey; padding: 1px 10px;") -
+            tr
+              td(style="border: 1px solid grey; padding: 1px 10px;") Flush draw and gutshot
+            tr
+              td(style="border: 1px solid grey; padding: 1px 10px;") OESD with pair
+            tr
+              td(style="border: 1px solid grey; padding: 1px 10px;") Flush draw with pair
+            tr
+              td(style="border: 1px solid grey; padding: 1px 10px;") Monster draw
+            tr
+              td(style="border: 1px solid grey; padding: 1px 10px;") -
+            tr
+              td(style="border: 1px solid grey; padding: 1px 10px;") -
+            tr
+              td(style="border: 1px solid grey; padding: 1px 10px;") -
+            tr
+              td(style="border: 1px solid grey; padding: 1px 10px;") -
+            tr
+              td(style="border: 1px solid grey; padding: 1px 10px;") -
+            tr
+              td(style="border: 1px solid grey; padding: 1px 10px;") -
+
+    .odds-and-outs__buttons-container
+      button.odds-and-outs__check-button.odds-and-outs__button Check
+      button.odds-and-outs__show-answers-button.odds-and-outs__button Show the Answers
+      button.odds-and-outs__reset-button.odds-and-outs__button Reset

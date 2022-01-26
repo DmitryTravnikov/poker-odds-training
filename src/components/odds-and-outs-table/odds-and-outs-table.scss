@@ -1,0 +1,89 @@
+@import '../../scss/variables';
+@import '../../scss/mixins';
+// @import '~bootstrap/scss/bootstrap-reboot';
+
+.odds-and-outs {
+  &__table-container {
+    @include flex(column, wrap, center, center);
+    position: relative;
+  }
+  &__table {
+    text-align: center;
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    input {
+      border: none;
+      outline: none;
+      background: none;
+      width: auto;
+      text-align: center;
+      color: #fff;
+      width: 60px;
+      &::placeholder {
+        color: #fff;
+      }
+      &:focus {
+        outline: 1px solid rgba($blue, 0.4);
+      }
+    }
+  }
+  &__buttons-container {
+    @include flex(row, wrap, center, center);
+    margin-top: 10px;
+  }
+  &__button {
+    margin-right: 3px;
+    border: none;
+    outline: none;
+    padding: 5px 15px;
+    background: $blue;
+    color: #fff;
+    transition: 0.2s;
+    &:hover {
+      background: darken($blue, 3%);
+    }
+    &:active {
+      background: $blue;
+    }
+    &:last-child {
+      margin-right: 0px;
+    }
+  }
+  &__answers-table {
+    position: absolute;
+    top: 0;
+    background: $space-grey;
+    transition: 0.2s;
+    opacity: 0;
+    z-index: -1;
+    &.active {
+      opacity: 1;
+      z-index: 2;
+    }
+  }
+  &__show-answers-button {
+    &.active {
+      background: darken($green, 10%);
+    }
+  }
+  &__answers-input {
+  }
+}
+
+// Media Queries
+@media only screen and (min-width: 576px) {
+}
+@media only screen and (min-width: 768px) {
+}
+@media only screen and (min-width: 992px) {
+}
+@media only screen and (min-width: 1200px) {
+}
+@media only screen and (min-width: 1400px) {
+}
+
+* {
+  // @include outline();
+}
