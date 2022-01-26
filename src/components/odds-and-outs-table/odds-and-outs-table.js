@@ -1,5 +1,5 @@
 const RED = '#AD4118';
-const GREEN = '#4E8A3A';
+const GREEN = '#045F31';
 const BLUE = '#1E347F';
 
 let getInputs = document.querySelectorAll('.get-input');
@@ -500,6 +500,7 @@ let answersArray = [
 
 for (let i = 0; i < answersInputs.length; i++) {
   answersInputs[i].value = answersArray[i];
+  answersInputs[i].parentNode.style.background = GREEN;
 }
 
 function showAnswers() {
